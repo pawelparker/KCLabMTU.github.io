@@ -5,56 +5,239 @@ excerpt: "RT2 Lab: Team members"
 sitemap: false
 permalink: /team/
 ---
-
-<h1>{{page.title}}</h1>
-
+<hr>
+<h1>KC-Lab {{page.title}}</h1>
+<hr>
 <!-- Staff -->
-
-<h2><a id="staff"></a>Staff</h2>
-{% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
-{% for member in members %}
+<!-- 
+<h2><a id="staff"></a>Staff</h2> -->
 <div class="card team-member-card">
     <div class="row mt-3">
-        <div class="col-md-2">
+        <div class="col-md-3">
             <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/dukka_kc.jpeg"
                     class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(100%); max-width: 100px;"/>
+                    style="filter: grayscale(100%); max-width: 200px;"/>
             </a>
         </div>
 
-        <div class="col-md-10">
+        <div class="col-md-9">
             <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.role }}</p>
+            <h4 class="card-title">Dr. Dukka KC</h4>
+            <p class="card-text">Head of KC-Lab</p>
+            <p class="card-text">Dukka KC is the associate dean for research, College of Computing; associate professor, Computer Science; and associate director of the Institute of Computing and Cybersystems (ICC).<a target="_blank" href="https://www.mtu.edu/cs/department/people/faculty/dukka-kc/">...read more</a></p>
+            <p><a href="#" title="Google Scholar"> Google Scholar
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" title='Google Scholar' zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="20" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 3.386719 3 L 27.339844 3 L 27.339844 28 L 3.386719 28 Z M 3.386719 3 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)"><path fill="rgb(0%, 0%, 0%)" d="M 14.660156 3.25 L 3.386719 10.308594 L 11.125 10.308594 C 11.097656 10.417969 11.050781 10.515625 11.027344 10.625 C 10.960938 10.964844 10.910156 11.34375 10.910156 11.734375 C 10.910156 16.773438 16.054688 16.207031 16.054688 16.207031 L 16.054688 17.492188 C 16.054688 18.011719 16.734375 17.832031 16.816406 18.890625 C 16.476562 18.890625 9.691406 18.695312 9.691406 23.277344 C 9.691406 27.882812 15.679688 27.65625 15.679688 27.65625 C 15.679688 27.65625 22.59375 27.964844 22.59375 22.273438 C 22.597656 18.871094 18.636719 17.765625 18.636719 16.398438 C 18.636719 15.015625 21.621094 14.609375 21.621094 11.375 C 21.621094 9.960938 21.523438 8.953125 20.890625 8.238281 C 20.84375 8.1875 20.808594 8.152344 20.761719 8.121094 C 20.75 8.109375 20.738281 8.101562 20.726562 8.09375 L 20.898438 8.09375 L 23.816406 5.902344 L 23.816406 8.898438 C 23.816406 8.953125 23.820312 9.007812 23.832031 9.0625 C 23.609375 9.1875 23.429688 9.363281 23.300781 9.585938 C 23.171875 9.808594 23.109375 10.050781 23.113281 10.308594 L 23.113281 11.722656 C 23.109375 11.910156 23.144531 12.09375 23.214844 12.269531 C 23.285156 12.445312 23.386719 12.597656 23.515625 12.734375 C 23.648438 12.867188 23.804688 12.972656 23.976562 13.042969 C 24.152344 13.117188 24.332031 13.152344 24.519531 13.152344 C 24.710938 13.152344 24.890625 13.117188 25.066406 13.042969 C 25.238281 12.972656 25.390625 12.867188 25.523438 12.734375 C 25.65625 12.597656 25.757812 12.445312 25.828125 12.269531 C 25.898438 12.09375 25.933594 11.910156 25.929688 11.722656 L 25.929688 10.308594 C 25.933594 10.050781 25.871094 9.808594 25.742188 9.585938 C 25.613281 9.363281 25.433594 9.1875 25.207031 9.0625 C 25.21875 9.007812 25.226562 8.953125 25.226562 8.898438 L 25.226562 4.839844 L 27.339844 3.25 Z M 15.632812 7.5625 C 16.039062 7.542969 16.445312 7.640625 16.835938 7.863281 C 17.125 8.007812 17.402344 8.21875 17.644531 8.480469 C 18.148438 8.984375 18.570312 9.714844 18.796875 10.578125 C 19.332031 12.625 18.636719 14.597656 17.191406 14.96875 C 15.765625 15.375 14.171875 14.039062 13.621094 12.007812 C 13.378906 11.015625 13.410156 10.054688 13.6875 9.292969 C 13.691406 9.28125 13.695312 9.273438 13.699219 9.265625 C 13.703125 9.261719 13.710938 9.257812 13.714844 9.253906 C 13.792969 8.953125 13.921875 8.679688 14.082031 8.457031 C 14.371094 8.035156 14.753906 7.746094 15.226562 7.617188 C 15.363281 7.585938 15.496094 7.566406 15.632812 7.5625 Z M 16.183594 19.75 C 18.566406 19.570312 20.597656 20.886719 20.746094 22.675781 C 20.84375 24.449219 19.007812 26.027344 16.605469 26.1875 C 14.222656 26.351562 12.160156 25.050781 12.046875 23.277344 C 11.933594 21.492188 13.78125 19.929688 16.183594 19.75 Z M 16.183594 19.75 " fill-opacity="1" fill-rule="nonzero"/></g></svg> -->
+            </a>
+             <a href="#" title="GitHub"> GitHub
+                <!-- <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="red"></path> </svg> -->
+            </a></p>
             </div>
         </div>
     </div>
 </div>
-{% endfor %}
 
 <!-- Students -->
 
-<h2><a id="student"></a>Students</h2>
-{% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
-{% for member in members %}
+<!-- <h2><a id="student"></a>Lab Members</h2> -->
 <div class="card team-member-card">
     <div class="row mt-3">
-        <div class="col-md-2">
+        <div class="col-md-3">
             <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/hamid_ismail.jpg"
                     class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(100%); max-width: 100px;"/>
+                    style="filter: grayscale(100%);"/>
             </a>
         </div>
 
-        <div class="col-md-10">
+        <div class="col-md-9">
             <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.role }}</p>
+            <h4 class="card-title">Dr. Hamid Ismail</h4>
+            <p class="card-text">Postdoctoral Researcher</p>
+            <p class="card-text">Hamid D. Ismail received his M.Sc. and Ph.D. in computational science from NC A&T State University, USA, and DVM and B.Sc. from the University of Khartoum. He earned several professional certifications including SAS Certified Base Programmer, SAS Certified Advanced Programmer, SAS Certified Clinical Trials Programmer, and SQL Expert Programmer. He is a bioinformatician, biologist, data scientist, statistician, and machine learning specialist. Hamid worked as a research associate at NC A&T State University and as a contractor in federal and clinical trial projects. He is currently working as a Postdoctoral Scholar in the Department of Computer Science at Michigan Technological University and as Adjunct Professor at NC A&T State University. Hamid's research interests are focused on bioinformatics algorithms, application of machine learning in genomic data and post-translational protein modifications, and genomic data science including the development of bioinformatics tools. Hamid is also peer-reviewing for several renowned journals and science book publishers and an author of two textbooks.
+                <!-- <a href="#">...read more</a> -->
+            </p>
+           <!--  <p><a href="#" title="Google Scholar"> Google Scholar
+               
+            </a>
+             <a href="#" title="GitHub"> GitHub
+            </a></p> -->
             </div>
         </div>
     </div>
 </div>
 
-{% endfor %}
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/meenal_chaudhari.jpg"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%)"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Dr. Meenal Chaudhary</h4>
+            <p class="card-text">Postdoctoral Researcher</p>
+            <p class="card-text">Meenal did her PhD in Computational Data Science and Engineering from North Carolina A&T
+ State University.
+She is presently working as a postdoctoral researcher in KC-Lab. Her research interests include
+ Transfer learning, Protein Language models, Deep learning models.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/mohadeseh_soleimanpour.png"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%);"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Dr. Mohadeseh Soleimanpour-moghadam</h4>
+            <p class="card-text">Visiting Professor}</p>
+            <p class="card-text">Mohadeseh Soleimanpour-moghadam was born in 1986, Iran. She received her
+B.S., M.S. and Ph.D. degrees in electrical engineering from Shahid Bahonar
+University of Kerman (SBUK), Kerman, Iran, in 2008, 2011 and 2016,
+respectively. Since then, she has been working with different academic and
+industrial positions in Iran. She is currently an Assistant Professor with the
+Department of Mechanical Engineering, University of Bam, Bam, Iran. Mohadeseh
+is also peer-reviewing for several renowned journals and conferences.
+Her current research interests include machine learning, bioinformatics, soft
+computing, applied optimization and wireless communications.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/pawel_pratyush.jpg"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%);"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Pawel Pratyush</h4>
+            <p class="card-text">PhD Student</p>
+            <p class="card-text">Pawel Pratyush is a Ph.D. student at KC Lab at the College of Computing, Michigan Tech. Prior to joining KC Lab, he was an undergraduate student of Computer and Engineering (CSE) at National Institute of Technology (NIT), Bhopal, India. His undergraduate research projects/papers largely dealt with the application of machine learning and deep learning in robotics, spatiotemporal modeling, health informatics, and astrophysics. At KC lab, he is responsible for developing deep learning-powered computational tools for the prediction of Post-Translational Modification sites in protein sequences. He is also interested in tackling problems related to Bioinformatics using notions of multilabel learning, cross-talks, transfer learning, and positive unlabeled learning. During his spare time, he likes watching movies, going on hikes, listening to music, and discussing his favorite shows/movies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/soufia_bahmani.jpg"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%);"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Soufia Bahmani</h4>
+            <p class="card-text">PhD Student</p>
+            <p class="card-text">Soufia Bahmani is a PhD student advised by Dr. KC at College of Computing, Michigan Tech. She received her Bachelors in Information Technology Engineering from Qazvin Azad University, Iran and subsequently completed her Masters from Amirkabir University, Iran in Information Technology Engineering. Before joining KC lab, she co-authored multiple papers in reputed journals in the field of image processing, machine learning and health informatics. She was also involved in software industry as a full stack developer over a span of 5 years. At KC lab, she is interested in developing handcrafted features independent deep learning models to solve important problems related to proteomics and genomics.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/subash_pakhrin.png"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%);"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Subash Chandra Pakhrin</h4>
+            <p class="card-text">PhD Candidate</p>
+            <p class="card-text">Subash Chandra Pakhrin is a Ph.D. candidate from Wichita State University. He loves exploring biological datasets and getting insight from them. He uses machine and deep learning algorithms to classify various kinds of Post-Translational Modification in proteins. He is supervised by Dr. Dukka B. KC.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/suresh_pokharel.jpg"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%);"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Suresh Pokharel</h4>
+            <p class="card-text">PhD Student</p>
+            <p class="card-text">Suresh Pokharel is a Ph.D. student at the College of Computing at Michigan Technological University. He is working as a Graduate Research Assistant at Dr. Dukka KC's research lab (KC-Lab).
+
+He is broadly interested in computational biology, machine learning, deep learning methods, transfer learning, generative modeling, and computer vision. In his recent works, he is developing machine learning and deep learning based models to locate the various post-translational modification (PTM) in protein sequences.
+
+Suresh received a Bachelor of Computer Engineering degree in 2017 and an M.Sc. in Computer Systems and Knowledge Engineering degree (with summa cum laude honor) in 2021 from Tribhuvan University, Nepal. While doing his master's, he also worked as an instructor at the Institute of Engineering, Pulchowk Campus, Nepal for various courses including programming languages, database management systems, machine learning, and image processing.
+
+His undergraduate research project was handwritten signature recognition using a Convolutional Neural Network and transfer learning. He did his graduate level thesis to develop a SIFT(Scale Invariant Feature Transform) based Image Quality Assessment(IQA) technique to study the quality of High-Resolution images generated by using generative adversarial networks.
+
+He also has several years of experience as a software engineer in the software development industry.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/zenia_sidorov.jpg"
+                    class="card-img img-responsive img-thumbnail"
+                    style="filter: grayscale(100%);"/>
+            </a>
+        </div>
+
+        <div class="col-md-9">
+            <div class="card-body">
+            <h4 class="card-title">Ženia Sidorov</h4>
+            <p class="card-text">MS Student</p>
+            <p class="card-text">Ženia Sidorov()Graduated with BS in Applied Mathematics and Computer Science from Northern Arctic Federal University (Russia), BA in Circumpolar Studies from Nord University (Norway) and completed one-year program in Molecular Biology from Jagiellonian  University (Poland). Research interests include language models and their application to bioinformatics problems like posttranslational modification and cross-talk prediction.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<h2><a id="student"></a>Past Student</h2>
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <ul>
+            <li>Dr. Niraj Thapa</li>
+        </ul>       
+    </div>
+</div>
+</div>
+

@@ -1,9 +1,15 @@
 ---
 title: "Vacancies"
 layout: default
-excerpt: "Openings"
+excerpt: "KCLab -- Openings."
 sitemap: false
-permalink: /vacancies
+permalink: /openings/
 ---
+<h1>Openings</h1>
 
-We are always looking for new group members with passion, talent, and grit!
+
+<br><br>
+We do not have any openings at the moment, but you are always encouraged to keep in touch with us for connections or future collaborations!
+
+Contact to: dbkc@mtu.edu
+<br><br>

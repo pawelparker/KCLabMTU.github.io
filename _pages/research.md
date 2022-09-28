@@ -10,9 +10,12 @@ permalink: /research/
 
 
 <br>
-We are working on various projects to improve the post-translation modification prediction task using deep learning methods, specifically natural language programming techniques.
+Below is a list of current projects in the lab.
 <br><br>
 Current Projects:
 	
-    1. Improving Protein Succinylation Sites Prediction Using Embeddings from Protein Language Model
-    2. pLMSNOSite: an ensemble-based approach for prediction of protein S-nitrosylation sites integrating supervised word embedding and embeddings from protein language model
+    1. Development of deep-learning based approaches for prediction of various protein post-translational modification site
+    2. Development of deep-learing based algorithms for prediction of DNA modification and RNA modification site
+    3. Development of bioinformatics workflows for analysis of Next-generation Sequencing data
+    4. Development of ML/DL models for various health informatics problem
+  
